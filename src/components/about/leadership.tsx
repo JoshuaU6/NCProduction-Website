@@ -32,7 +32,7 @@ const team = [
   {
     name: "Joshua Unoarumhi",
     role: "Chief Technology Officer",
-    bio: "Technical innovator bringing cutting-edge technology to storytelling, with expertise in cinematography and post-production.",
+    bio: "Technical innovator driving the integration of emerging technologies in media and entertainment. Expertise in software architecture, cloud infrastructure, and scalable content delivery systems.",
     image: "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748353977/Joshua_CTO_ibkdyb.jpg",
     social: {
       linkedin: "https://linkedin.com/in/jamesrodriguez",
