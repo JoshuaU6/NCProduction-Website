@@ -13,20 +13,20 @@ const team = [
     bio: "Visionary leader with 15+ years in multimedia production, passionate about amplifying diverse voices through innovative storytelling.",
     image: "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748354414/Isaac_CoFounder_rerdae.jpg",
     social: {
-      linkedin: "https://linkedin.com/in/michaelchen",
-      twitter: "https://twitter.com/michaelchen",
-      email: "michael@ncproductions.com",
+      linkedin: "https://www.linkedin.com/in/isaac-bokoko-8388671bb",
+      twitter: "https://twitter.com/",
+      email: "Isaacb@ncproductions.com",
     },
   },
   {
-    name: "Ryan",
+    name: "Ryan Rusconi",
     role: "Co-Founder & Executive Producer",
-    bio: "Award-winning producer specializing in socially impactful content, with expertise in film and theatre production management.",
+    bio: "Award-winning producer specialising in socially impactful content, with expertise in film and theatre production management. Passionate about amplifying underrepresented voices and delivering powerful narratives through strategic creative leadership.",
     image: "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748354191/Ryan_CoFounder_vsoq8w.jpg",
     social: {
-      linkedin: "https://linkedin.com/in/sophiawilliams",
-      twitter: "https://twitter.com/sophiawilliams",
-      email: "sophia@ncproductions.com",
+      linkedin: "https://www.linkedin.com/in/ryan-rusconi-31196b25b",
+      twitter: "https://twitter.com/",
+      email: "ryanr@ncproductions.com",
     },
   },
   {
@@ -35,9 +35,9 @@ const team = [
     bio: "Technical innovator driving the integration of emerging technologies in media and entertainment. Expertise in software architecture, cloud infrastructure, and scalable content delivery systems.",
     image: "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748353977/Joshua_CTO_ibkdyb.jpg",
     social: {
-      linkedin: "https://linkedin.com/in/jamesrodriguez",
-      twitter: "https://twitter.com/jamesrodriguez",
-      email: "james@ncproductions.com",
+      linkedin: "https://www.linkedin.com/in/joshua-unoarumhi",
+      twitter: "https://twitter.com/",
+      email: "joshuau@ncproductions.com",
     },
   },
 ];
