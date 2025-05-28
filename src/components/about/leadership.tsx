@@ -10,7 +10,7 @@ const team = [
   {
     name: "Isaac Bokoko",
     role: "Creative Director & Co-Founder",
-    bio: "Visionary leader with 15+ years in multimedia production, passionate about amplifying diverse voices through innovative storytelling.",
+    bio: "Visionary leader in multimedia production, passionate about amplifying diverse voices through innovative storytelling.",
     image: "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748354414/Isaac_CoFounder_rerdae.jpg",
     social: {
       linkedin: "https://www.linkedin.com/in/isaac-bokoko-8388671bb",
@@ -21,7 +21,7 @@ const team = [
   {
     name: "Ryan Rusconi",
     role: "Co-Founder & Executive Producer",
-    bio: "Award-winning producer specialising in socially impactful content, with expertise in film and theatre production management. Passionate about amplifying underrepresented voices and delivering powerful narratives through strategic creative leadership.",
+    bio: "Experienced producer specialising in socially impactful content, with expertise in film and theatre production management.",
     image: "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748354191/Ryan_CoFounder_vsoq8w.jpg",
     social: {
       linkedin: "https://www.linkedin.com/in/ryan-rusconi-31196b25b",
@@ -32,7 +32,7 @@ const team = [
   {
     name: "Joshua Unoarumhi",
     role: "Chief Technology Officer",
-    bio: "Technical innovator driving the integration of emerging technologies in media and entertainment. Expertise in software architecture, cloud infrastructure, and scalable content delivery systems.",
+    bio: "Technical innovator with expertise in software architecture, cloud infrastructure, and scalable content delivery systems.",
     image: "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748353977/Joshua_CTO_ibkdyb.jpg",
     social: {
       linkedin: "https://www.linkedin.com/in/joshua-unoarumhi",
