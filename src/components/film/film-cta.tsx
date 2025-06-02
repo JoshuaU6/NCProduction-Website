@@ -25,7 +25,7 @@ export function FilmCTA() {
           <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
             Whether you have a script or need an engaging social campaign or
             commercial, we&apos;re here to create impactful projects that
-            resonate with your audience
+            resonate with your audience.
           </p>
 
           <motion.div

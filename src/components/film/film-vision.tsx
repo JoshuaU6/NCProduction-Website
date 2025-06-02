@@ -3,7 +3,9 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Quote, Film, Mic, Music, Camera, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -52,8 +54,9 @@ export function FilmVision() {
               From concept development to post-production, we create compelling
               visual stories for screens of all sizes. Whether it&apos;s
               documentaries, dramas, comedies, commercial campaigns, or micro
-              content, we combine our co-founders&apos; expertise in
-              cinematography, direction, sound design, and composing.
+              content, we meticulously approach all elements of production —
+              from cinematography, direction, and sound engineering to
+              composing.
             </p>
 
             <div className="relative mb-8">
@@ -91,9 +94,12 @@ export function FilmVision() {
             <Button
               size="lg"
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+              asChild
             >
-              INQUIRE ABOUT FILM
-              <ArrowRight className="ml-2" size={20} />
+              <Link href="/contact">
+                INQUIRE ABOUT FILM
+                <ArrowRight className="ml-2" size={20} />
+              </Link>
             </Button>
           </motion.div>
 

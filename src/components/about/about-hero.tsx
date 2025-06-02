@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart, Users, Megaphone } from "lucide-react";
 import Image from "next/image";
 
 export function AboutHero() {
@@ -46,38 +45,6 @@ export function AboutHero() {
             voices of underrepresented communities through the power of
             storytelling across film, theatre, and fine art.
           </motion.p>
-
-          <motion.div
-            className="flex flex-wrap justify-center gap-6 mt-12"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-          >
-            {[
-              { icon: Users, label: "Diverse Voices", count: "100+" },
-              { icon: Megaphone, label: "Stories Told", count: "250+" },
-              { icon: Heart, label: "Communities Served", count: "50+" },
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                className="flex items-center gap-3 bg-white/80 dark:bg-black/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg"
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
-                <stat.icon
-                  className="text-red-500"
-                  size={24}
-                  aria-hidden="true"
-                />
-                <div>
-                  <div className="font-bold text-lg">{stat.count}</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">
-                    {stat.label}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
         </motion.div>
       </div>
     </section>

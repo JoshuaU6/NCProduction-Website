@@ -79,7 +79,7 @@ export function FeaturedProjects() {
             id="featured-projects-heading"
             className="text-4xl md:text-5xl font-bold mb-4"
           >
-            FEATURED PROJECTS
+            Explore our productions — where art meets impact.
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Discover our latest creative endeavors that have captivated
@@ -120,7 +120,7 @@ export function FeaturedProjects() {
                   <div className="absolute top-4 left-4 flex items-center gap-2">
                     <Badge
                       variant="secondary"
-                      className="bg-red-600 text-white"
+                      className="bg-red-600 text-white text-base"
                     >
                       {project.category}
                     </Badge>
