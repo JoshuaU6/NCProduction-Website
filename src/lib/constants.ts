@@ -33,3 +33,25 @@ export const RESPONSE_TIMES = {
   phone: "Same day",
   consultation: "Within 48 hours",
 } as const;
+
+export const testimonials = [
+  {
+    name: "Martin A.",
+    role: "Creative Producer, Freelance",
+    content: "NCProductions are creative, empowering and inclusive.",
+    rating: 5,
+  },
+  {
+    name: "Emily S.",
+    role: "Painter & Poet",
+    content:
+      "NCProductions provided me with a professional environment to platform my artistry.",
+    rating: 5,
+  },
+  {
+    name: "Nishan Singh",
+    role: "Company Owner",
+    content: "They provided me with cinematic social reels for my company",
+    rating: 5,
+  },
+];

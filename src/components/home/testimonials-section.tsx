@@ -1,33 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Star } from "lucide-react";
 
-const testimonials = [
-  {
-    name: "Sarah Johnson",
-    role: "Creative Director, Artisan Studios",
-    content:
-      "NC Productions transformed our vision into reality with exceptional creativity and professionalism.",
-    rating: 5,
-  },
-  {
-    name: "Michael Chen",
-    role: "Event Coordinator, Global Events",
-    content:
-      "Their attention to detail and innovative approach made our event truly unforgettable.",
-    rating: 5,
-  },
-  {
-    name: "Emma Rodriguez",
-    role: "Theatre Producer",
-    content:
-      "Working with NC Productions was a game-changer for our theatrical productions.",
-    rating: 5,
-  },
-];
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { testimonials } from "@/lib/constants";
 
 export function TestimonialsSection() {
   return (
