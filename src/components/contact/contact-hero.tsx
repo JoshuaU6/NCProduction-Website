@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { MessageCircle, Phone, Mail } from "lucide-react"
+import { motion } from "framer-motion";
+import { MessageCircle } from "lucide-react";
 
 export function ContactHero() {
   return (
@@ -40,7 +40,7 @@ export function ContactHero() {
             Let&apos;s discuss how we can bring your creative vision to life.
           </motion.p>
 
-          <motion.div
+          {/* <motion.div
             className="flex flex-wrap justify-center gap-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -66,9 +66,9 @@ export function ContactHero() {
                 </div>
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

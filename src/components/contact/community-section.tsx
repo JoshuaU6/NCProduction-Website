@@ -111,7 +111,7 @@ export function CommunitySection() {
 
                 <h3 className="text-2xl font-bold mb-4">Join Our Community</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                  Are you a freelancer or creative? Join our network and get
+                  Are you a freelancer or creative? Join Our Community and get
                   involved in exciting projects across the arts.
                 </p>
 
@@ -141,7 +141,7 @@ export function CommunitySection() {
                   variant="outline"
                   className="w-full border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-all duration-300 group"
                 >
-                  JOIN NETWORK
+                  JOIN OUR COMMUNITY
                   <ArrowRight
                     className="ml-2 transition-transform group-hover:translate-x-1"
                     size={16}

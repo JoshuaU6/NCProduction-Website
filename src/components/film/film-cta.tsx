@@ -23,9 +23,9 @@ export function FilmCTA() {
             <span className="text-red-500">story to life?</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-            Whether you have a script ready or just an idea, we&apos;re here to
-            help you create compelling visual stories that resonate with your
-            audience and make a lasting impact.
+            Whether you have a script or need an engaging social campaign or
+            commercial, we&apos;re here to create impactful projects that
+            resonate with your audience
           </p>
 
           <motion.div
