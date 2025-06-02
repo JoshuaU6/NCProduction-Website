@@ -25,16 +25,6 @@ export function AboutHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <motion.div
-            className="inline-flex items-center gap-2 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 px-4 py-2 rounded-full text-sm font-medium mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            <Heart size={16} aria-hidden="true" />
-            Amplifying underrepresented voices
-          </motion.div>
-
           <motion.h1
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
             initial={{ opacity: 0, y: 30 }}

@@ -3,7 +3,6 @@
 import { ContactHero } from "@/components/contact/contact-hero";
 import { ContactForm } from "@/components/contact/contact-form";
 import { ContactInfo } from "@/components/contact/contact-info";
-import { ContactMap } from "@/components/contact/contact-map";
 import { CommunitySection } from "@/components/contact/community-section";
 
 export default function ContactPageClient() {
@@ -14,7 +13,7 @@ export default function ContactPageClient() {
         <ContactInfo />
         <ContactForm />
       </div>
-      <ContactMap />
+      {/* <ContactMap /> */}
       <CommunitySection />
     </main>
   );

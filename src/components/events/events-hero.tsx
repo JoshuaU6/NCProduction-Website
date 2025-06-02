@@ -33,15 +33,6 @@ export function EventsHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <motion.div
-            className="inline-flex items-center gap-2 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 px-6 py-3 rounded-full text-sm font-medium mb-8 backdrop-blur-sm border border-red-200/50 dark:border-red-800/50"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            <Heart size={16} aria-hidden="true" />
-            Connection, celebration, and community
-          </motion.div>
 
           <motion.h1
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight"

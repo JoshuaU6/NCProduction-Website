@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Mail, Instagram, Linkedin } from "lucide-react";
+import { Mail, Instagram, Linkedin } from "lucide-react";
 import { CONTACT_INFO } from "@/lib/constants";
 
 export function ContactInfo() {
@@ -56,7 +56,7 @@ export function ContactInfo() {
           </p>
 
           {/* Location */}
-          <div className="mb-12">
+          {/* <div className="mb-12">
             <h3 className="text-2xl font-bold mb-6">Location</h3>
             <div className="flex items-start gap-4 p-6 bg-gray-50 dark:bg-gray-900 rounded-2xl">
               <div className="w-12 h-12 bg-red-100 dark:bg-red-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -75,7 +75,7 @@ export function ContactInfo() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Contact Information */}
           <div className="mb-12">
