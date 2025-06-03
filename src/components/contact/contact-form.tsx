@@ -302,12 +302,7 @@ export function ContactForm() {
                 Response Time
               </div>
             </div>
-            <div className="p-4 bg-white dark:bg-black rounded-lg shadow">
-              <div className="text-2xl font-bold text-red-500">98%</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">
-                Success Rate
-              </div>
-            </div>
+
             <div className="p-4 bg-white dark:bg-black rounded-lg shadow">
               <div className="text-2xl font-bold text-red-500">Free</div>
               <div className="text-sm text-gray-600 dark:text-gray-400">

@@ -121,15 +121,6 @@ export function FilmVision() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-
-              <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-xl font-bold mb-2">
-                  Professional Equipment
-                </h3>
-                <p className="text-sm opacity-90">
-                  State-of-the-art cinematography tools
-                </p>
-              </div>
             </div>
           </motion.div>
         </div>
