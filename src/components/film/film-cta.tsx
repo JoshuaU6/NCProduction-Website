@@ -62,7 +62,7 @@ export function FilmCTA() {
                 label: "Free Consultation",
                 value: "Always",
               },
-              { icon: Calendar, label: "Response Time", value: "< 24 hours" },
+              { icon: Calendar, label: "Response Time", value: "< 48 hours" },
               { icon: Film, label: "Project Success Rate", value: "100%" },
             ].map((stat, index) => (
               <motion.div

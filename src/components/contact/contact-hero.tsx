@@ -49,7 +49,7 @@ export function ContactHero() {
             {[
               { icon: Phone, label: "Call Us", value: "+44 (0) 123 456 789" },
               { icon: Mail, label: "Email Us", value: "info@ncproductions.com" },
-              { icon: MessageCircle, label: "Response Time", value: "< 24 hours" },
+              { icon: MessageCircle, label: "Response Time", value: "< 48 hours" },
             ].map((contact, index) => (
               <motion.div
                 key={index}

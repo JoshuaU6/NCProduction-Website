@@ -61,7 +61,7 @@ export function EventsCTA() {
               {
                 icon: MessageCircle,
                 label: "Response Time",
-                value: "< 24 hours",
+                value: "< 48 hours",
               },
             ].map((stat, index) => (
               <motion.div

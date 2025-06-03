@@ -26,10 +26,10 @@ const projects = [
   },
   {
     id: 2,
-    title: "Echoes of Tomorrow",
+    title: "The White Rose - The Musical",
     category: "THEATRE",
     description:
-      "An innovative stage production blending traditional theatre with modern technology.",
+      "An original historical musical recounting the heartbreaking story of Hans and Sophie through the eyes of their father, Robert Scholl.",
     image:
       "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748241838/452633233_880258994136132_5076902531185505532_n_vowwep.jpg",
     color: "from-blue-500/20 to-blue-900/40",

@@ -57,7 +57,7 @@ export function CallToAction() {
             viewport={{ once: true }}
           >
             {[
-              { label: "Response Time", value: "< 24 hours" },
+              { label: "Response Time", value: "< 48 hours" },
               { label: "Free Consultation", value: "Always" },
               { label: "Project Success Rate", value: "98%" },
             ].map((stat, index) => (

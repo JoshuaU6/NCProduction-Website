@@ -137,7 +137,7 @@ export function CommunityFocus() {
                   <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mb-2">
                     <Mic size={16} />
                   </div>
-                  <p className="text-sm font-medium">Artist Showcases</p>
+                  <p className="text-sm font-medium">Artist Spotlight</p>
                 </div>
               </motion.div>
 

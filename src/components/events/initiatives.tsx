@@ -1,58 +1,46 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
+import { Film, Palette, ArrowRight, Star } from "lucide-react";
+import Image from "next/image";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Film,
-  Palette,
-  ArrowRight,
-  Calendar,
-  MapPin,
-  Users,
-  Star,
-} from "lucide-react";
-import Image from "next/image";
-import { useRef } from "react";
+import Link from "next/link";
 
 const initiatives = [
   {
     title: "Community Film Collective",
     description:
-      "A collaborative platform bringing together emerging filmmakers from diverse backgrounds to create, share, and celebrate authentic stories.",
+      "Each month, we curate a themed selection of films submitted by local and emerging creatives.",
     icon: Film,
     image:
       "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748241844/3cf8ff88-53d4-4737-ae7f-5410feef432b_qqlvj5.jpg",
-    features: [
-      "Monthly Screenings",
-      "Filmmaker Workshops",
-      "Mentorship Programs",
-      "Equipment Sharing",
+    featuresImages: [
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748337637/DSC_4046_tzp22j.jpg",
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748337635/DSC_4645-2_v9s1fq.jpg",
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748241984/Screenshot_2025-05-21_at_11.40.49_qlryio.png",
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748241844/3cf8ff88-53d4-4737-ae7f-5410feef432b_qqlvj5.jpg",
     ],
-    nextEvent: "March 15, 2025",
-    location: "Creative Hub, Downtown",
-    participants: "150+ filmmakers",
     rating: 4.9,
     color: "from-blue-500/20 to-blue-900/40",
     darkColor: "from-blue-900/80 to-black/80",
+    link: "https://www.instagram.com/ncp.live",
   },
   {
-    title: "Shades Of Resistance",
+    title: "ShadesOf",
     description:
-      "An immersive arts experience celebrating the spectrum of human creativity through multimedia installations and live performances.",
+      "A Series of Temporal Reflections — Each Show Investigates a Nuanced Sociopolitical Issue in All Its Shades, From the Perspectives of Practitioners Creating in the Current Climate",
     icon: Palette,
     image:
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748338181/Bomb_Factory_ART-20_l3sw31.jpg",
+    featuresImages: [
       "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748338175/Bomb_Factory_ART-08_tcvmo5.jpg",
-    features: [
-      "Interactive Installations",
-      "Live Performances",
-      "Artist Talks",
-      "Community Workshops",
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748338186/Bomb_Factory_ART-50_c1wysx.jpg",
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748338192/IMG_0578_shdkjk.jpg",
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748338194/IMG_0582_2_j3f3w1.jpg",
     ],
-    nextEvent: "April 22, 2025",
-    location: "Gallery District",
-    participants: "200+ artists",
     rating: 5.0,
     color: "from-purple-500/20 to-purple-900/40",
     darkColor: "from-purple-900/80 to-black/80",
@@ -60,27 +48,8 @@ const initiatives = [
 ];
 
 export function Initiatives() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"],
-  });
-
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-
   return (
-    <section
-      ref={containerRef}
-      className="py-32 bg-gray-50 dark:bg-gray-900 relative overflow-hidden"
-    >
-      {/* Animated background */}
-      <motion.div
-        className="absolute inset-0 opacity-5 dark:opacity-10"
-        style={{ y: backgroundY }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-red-500 via-purple-500 to-blue-500" />
-      </motion.div>
-
+    <section className="py-32 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -145,69 +114,22 @@ export function Initiatives() {
                       {initiative.description}
                     </p>
 
-                    {/* Event Details */}
-                    <div className="grid grid-cols-2 gap-6 mb-8 p-6 bg-gray-50 dark:bg-gray-900 rounded-2xl">
-                      <div className="flex items-center gap-3">
-                        <Calendar className="text-red-500" size={20} />
-                        <div>
-                          <p className="text-sm text-gray-500 dark:text-gray-400">
-                            Next Event
-                          </p>
-                          <p className="font-semibold">
-                            {initiative.nextEvent}
-                          </p>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <MapPin className="text-red-500" size={20} />
-                        <div>
-                          <p className="text-sm text-gray-500 dark:text-gray-400">
-                            Location
-                          </p>
-                          <p className="font-semibold">{initiative.location}</p>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3 col-span-2">
-                        <Users className="text-red-500" size={20} />
-                        <div>
-                          <p className="text-sm text-gray-500 dark:text-gray-400">
-                            Community
-                          </p>
-                          <p className="font-semibold">
-                            {initiative.participants}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Features */}
-                    <div className="space-y-3 mb-8">
-                      <h4 className="font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide text-sm">
-                        What We Offer
-                      </h4>
-                      <div className="grid grid-cols-2 gap-3">
-                        {initiative.features.map((feature, idx) => (
-                          <div
-                            key={idx}
-                            className="flex items-center text-gray-600 dark:text-gray-400"
-                          >
-                            <div
-                              className="w-2 h-2 bg-red-500 rounded-full mr-3"
-                              aria-hidden="true"
-                            ></div>
-                            {feature}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
                     <div className="flex gap-4">
-                      <Button className="bg-red-600 hover:bg-red-700 text-white flex-1">
-                        Join {initiative.title}
-                        <ArrowRight className="ml-2" size={16} />
-                      </Button>
-                      <Button variant="outline" className="flex-1">
-                        Learn More
+                      <Button
+                        className="bg-red-600 hover:bg-red-700 text-white flex-1"
+                        asChild
+                      >
+                        {initiative.link ? (
+                          <Link href={initiative.link} target="_blank">
+                            Join {initiative.title}
+                            <ArrowRight className="ml-2" size={16} />
+                          </Link>
+                        ) : (
+                          <Link href="/contact">
+                            Partners and collaborators — reach out
+                            <ArrowRight className="ml-2" size={16} />
+                          </Link>
+                        )}
                       </Button>
                     </div>
                   </CardContent>
@@ -239,67 +161,31 @@ export function Initiatives() {
                     <h4 className="text-xl font-bold mb-2">
                       {initiative.title}
                     </h4>
-                    <p className="text-sm opacity-90">
-                      Building creative communities
-                    </p>
                   </div>
                 </motion.div>
 
                 <div className="grid grid-cols-2 gap-4">
-                  <motion.div
-                    className="relative h-40 rounded-2xl overflow-hidden shadow-lg"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Image
-                      src="https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748241931/DSC_2914_ycgisf.jpg"
-                      alt="Community workshop"
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 50vw, 25vw"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                    <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-xs font-medium">Workshops</p>
-                    </div>
-                  </motion.div>
-
-                  <motion.div
-                    className="relative h-40 rounded-2xl overflow-hidden shadow-lg"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Image
-                      src="https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748241841/9bcace93-86e3-40de-b318-fe224ef13369_rziu7j.jpg"
-                      alt="Artist collaboration"
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 50vw, 25vw"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                    <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-xs font-medium">Collaboration</p>
-                    </div>
-                  </motion.div>
+                  {initiative.featuresImages.slice(0, 3).map((image, idx) => (
+                    <motion.div
+                      key={idx}
+                      // Apply col-span-2 if it's the last image (idx === 2)
+                      className={`relative h-40 rounded-2xl overflow-hidden shadow-lg ${
+                        idx === 2 ? "col-span-2" : ""
+                      }`}
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <Image
+                        src={image}
+                        alt="featured initiative"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 50vw, 25vw"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    </motion.div>
+                  ))}
                 </div>
-
-                <motion.div
-                  className="relative h-32 rounded-2xl overflow-hidden shadow-lg"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <Image
-                    src="https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748241844/1_1_jcrddz.jpg"
-                    alt="Community impact"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-3 left-3 text-white">
-                    <p className="text-sm font-medium">Community Impact</p>
-                  </div>
-                </motion.div>
               </div>
             </motion.div>
           ))}

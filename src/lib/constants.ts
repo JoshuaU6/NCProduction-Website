@@ -29,7 +29,7 @@ export const BUSINESS_HOURS = {
 
 // Response Times
 export const RESPONSE_TIMES = {
-  email: "< 24 hours",
+  email: "< 48 hours",
   phone: "Same day",
   consultation: "Within 48 hours",
 } as const;
