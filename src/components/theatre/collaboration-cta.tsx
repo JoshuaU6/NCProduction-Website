@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, MessageCircle, Calendar, Users } from "lucide-react";
+import { ArrowRight, MessageCircle, Users } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
@@ -51,7 +51,7 @@ export function CollaborationCTA() {
           </motion.div>
 
           <motion.div
-            className="grid md:grid-cols-3 gap-8 text-center"
+            className="grid md:grid-cols-2 gap-8 text-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -64,7 +64,6 @@ export function CollaborationCTA() {
                 label: "Response Time",
                 value: "< 48 hours",
               },
-              { icon: Calendar, label: "Production Success", value: "100%" },
             ].map((stat, index) => (
               <motion.div
                 key={index}

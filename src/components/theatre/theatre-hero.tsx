@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Theater, Sparkles, Users } from "lucide-react";
 import Image from "next/image";
 
 export function TheatreHero() {
@@ -56,42 +55,6 @@ export function TheatreHero() {
             conversation. Committed to introducing new works and fresh
             approaches to theatre in bold and inclusive ways.
           </motion.p>
-
-          <motion.div
-            className="flex flex-wrap justify-center gap-8 mt-16"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-          >
-            {[
-              { icon: Theater, label: "Productions", count: "25+" },
-              { icon: Sparkles, label: "New Works", count: "40+" },
-              { icon: Users, label: "Audiences Reached", count: "15K+" },
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                className="flex items-center gap-4 bg-white/10 backdrop-blur-md rounded-2xl px-8 py-4 shadow-xl border border-white/20"
-                whileHover={{ scale: 1.05, y: -5 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
-                <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
-                  <stat.icon
-                    className="text-red-400"
-                    size={24}
-                    aria-hidden="true"
-                  />
-                </div>
-                <div>
-                  <div className="font-bold text-2xl text-white">
-                    {stat.count}
-                  </div>
-                  <div className="text-sm text-gray-300 font-medium">
-                    {stat.label}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
         </motion.div>
       </div>
     </section>

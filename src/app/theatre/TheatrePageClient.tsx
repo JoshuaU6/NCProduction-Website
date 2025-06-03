@@ -1,7 +1,5 @@
 import {
   CollaborationCTA,
-  ProductionShowcase,
-  TheatreApproach,
   TheatreHero,
   TheatreVision,
 } from "@/components/theatre";
@@ -11,8 +9,7 @@ export default function TheatrePageClient() {
     <main>
       <TheatreHero />
       <TheatreVision />
-      <ProductionShowcase />
-      <TheatreApproach />
+      {/* <TheatreApproach /> */}
       <CollaborationCTA />
     </main>
   );

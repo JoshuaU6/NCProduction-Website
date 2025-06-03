@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
-import { Quote, Lightbulb, Users, Mic, Palette, Zap } from "lucide-react";
+import { Quote, Mic, Palette, Zap } from "lucide-react";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -61,7 +61,7 @@ export function TheatreVision() {
               </p>
 
               {/* Core Values */}
-              <div className="grid grid-cols-2 gap-6">
+              {/* <div className="grid grid-cols-2 gap-6">
                 {[
                   {
                     icon: Lightbulb,
@@ -100,7 +100,7 @@ export function TheatreVision() {
                     </p>
                   </motion.div>
                 ))}
-              </div>
+              </div> */}
             </motion.div>
           </div>
 
@@ -122,12 +122,12 @@ export function TheatreVision() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-              <div className="absolute bottom-6 left-6 text-white">
+              {/* <div className="absolute bottom-6 left-6 text-white">
                 <h3 className="text-xl font-bold mb-2">Experimental Staging</h3>
                 <p className="text-sm opacity-90">
                   Pushing boundaries of traditional theatre
                 </p>
-              </div>
+              </div> */}
             </motion.div>
 
             {/* Grid of smaller images */}
@@ -147,12 +147,6 @@ export function TheatreVision() {
                   sizes="(max-width: 1024px) 50vw, 25vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 to-transparent" />
-                <div className="absolute bottom-4 left-4 text-white">
-                  <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mb-2">
-                    <Users size={16} />
-                  </div>
-                  <p className="text-sm font-medium">Diverse Casting</p>
-                </div>
               </motion.div>
 
               <motion.div
@@ -170,12 +164,6 @@ export function TheatreVision() {
                   sizes="(max-width: 1024px) 50vw, 25vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent" />
-                <div className="absolute bottom-4 left-4 text-white">
-                  <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mb-2">
-                    <Lightbulb size={16} />
-                  </div>
-                  <p className="text-sm font-medium">Innovative Design</p>
-                </div>
               </motion.div>
             </div>
 
@@ -195,12 +183,6 @@ export function TheatreVision() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-green-900/60 via-transparent to-transparent" />
-              <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-lg font-bold mb-2">Community Workshops</h3>
-                <p className="text-sm opacity-90">
-                  Engaging new audiences in the creative process
-                </p>
-              </div>
             </motion.div>
 
             {/* Three column grid */}
@@ -254,13 +236,13 @@ export function TheatreVision() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6 text-white">
+              {/* <div className="absolute bottom-6 left-6 right-6 text-white">
                 <h3 className="text-xl font-bold mb-2">Audience Connection</h3>
                 <p className="text-sm opacity-90 leading-relaxed">
                   Creating intimate moments that bridge the gap between
                   performer and audience
                 </p>
-              </div>
+              </div> */}
             </motion.div>
           </motion.div>
         </div>
