@@ -61,7 +61,7 @@ export function CommunityFocus() {
               </p>
 
               {/* Impact Stats */}
-              <div className="grid grid-cols-2 gap-6">
+              {/* <div className="grid grid-cols-2 gap-6">
                 {[
                   { number: "98%", label: "Artist Satisfaction" },
                   { number: "15K+", label: "Community Members" },
@@ -84,7 +84,7 @@ export function CommunityFocus() {
                     </div>
                   </motion.div>
                 ))}
-              </div>
+              </div> */}
             </motion.div>
           </div>
 

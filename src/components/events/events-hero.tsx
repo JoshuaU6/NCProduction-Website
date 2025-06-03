@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Users, Heart, Sparkles } from "lucide-react";
 import { CldImage } from "next-cloudinary";
 
 export function EventsHero() {
@@ -33,7 +32,6 @@ export function EventsHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-
           <motion.h1
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight"
             initial={{ opacity: 0, y: 30 }}
@@ -57,40 +55,6 @@ export function EventsHero() {
             for audiences to engage meaningfully with it. Through connection and
             celebration, we amplify underrepresented voices.
           </motion.p>
-
-          <motion.div
-            className="flex flex-wrap justify-center gap-8 mt-16"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-          >
-            {[
-              { icon: Users, label: "Community Events", count: "150+" },
-              { icon: Sparkles, label: "Artists Showcased", count: "500+" },
-              { icon: Heart, label: "Lives Impacted", count: "10K+" },
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                className="flex items-center gap-4 bg-white/95 dark:bg-black/95 backdrop-blur-md rounded-2xl px-8 py-4 shadow-xl border border-gray-200/50 dark:border-gray-700/50"
-                whileHover={{ scale: 1.05, y: -5 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
-                <div className="w-12 h-12 bg-red-100 dark:bg-red-900/30 rounded-xl flex items-center justify-center">
-                  <stat.icon
-                    className="text-red-500"
-                    size={24}
-                    aria-hidden="true"
-                  />
-                </div>
-                <div>
-                  <div className="font-bold text-2xl">{stat.count}</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">
-                    {stat.label}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
         </motion.div>
       </div>
     </section>

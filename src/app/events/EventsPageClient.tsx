@@ -1,7 +1,6 @@
 import {
   ClientTestimonials,
   CommunityFocus,
-  EventServices,
   EventsCTA,
   EventsHero,
   Initiatives,
@@ -13,7 +12,6 @@ export default function EventsPageClient() {
       <EventsHero />
       <CommunityFocus />
       <Initiatives />
-      <EventServices />
       <ClientTestimonials />
       <EventsCTA />
     </main>

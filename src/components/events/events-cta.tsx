@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Calendar, MessageCircle, Users } from "lucide-react";
+import { ArrowRight, MessageCircle, Users } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
@@ -50,7 +50,7 @@ export function EventsCTA() {
           </motion.div>
 
           <motion.div
-            className="grid md:grid-cols-3 gap-8 text-center"
+            className="grid md:grid-cols-2 gap-8 text-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -63,7 +63,6 @@ export function EventsCTA() {
                 label: "Response Time",
                 value: "< 24 hours",
               },
-              { icon: Calendar, label: "Event Success Rate", value: "100%" },
             ].map((stat, index) => (
               <motion.div
                 key={index}
