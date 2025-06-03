@@ -59,7 +59,6 @@ export function CallToAction() {
             {[
               { label: "Response Time", value: "< 48 hours" },
               { label: "Free Consultation", value: "Always" },
-              { label: "Project Success Rate", value: "98%" },
             ].map((stat, index) => (
               <motion.div
                 key={index}

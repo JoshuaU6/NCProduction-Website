@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
 
 export function ContactHero() {
   return (
@@ -12,16 +11,6 @@ export function ContactHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <motion.div
-            className="inline-flex items-center gap-2 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 px-6 py-3 rounded-full text-sm font-medium mb-8"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            <MessageCircle size={16} aria-hidden="true" />
-            Ready to collaborate?
-          </motion.div>
-
           <motion.h1
             className="text-5xl md:text-7xl font-bold mb-8 leading-tight"
             initial={{ opacity: 0, y: 30 }}
