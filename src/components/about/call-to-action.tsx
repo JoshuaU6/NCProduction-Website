@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle } from "lucide-react";
+import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export function CallToAction() {
   return (
@@ -50,7 +50,7 @@ export function CallToAction() {
           </motion.div>
 
           <motion.div
-            className="mt-12 grid md:grid-cols-3 gap-8 text-center"
+            className="mt-12 grid md:grid-cols-2 gap-8 text-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
