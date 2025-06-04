@@ -63,20 +63,37 @@ export const films = [
     image:
       "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748353388/Benchwarmes_0427_1_uupvw0.jpg",
     title: "Benchwarmers – Short Film",
+    category: "SHORT FILM",
+    year: "2024",
+    description:
+      "A compelling short film exploring themes of belonging and perseverance in competitive sports.",
   },
+
   {
     image:
       "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748338554/Screenshot_2025-05-21_at_11.46.41_g5qacr.png",
     title: "Who Are We – Short Doc",
+    category: "DOCUMENTARY",
+    year: "2024",
+    description:
+      "An intimate documentary examining identity and community in contemporary society.",
   },
   {
     image:
       "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748338740/Screenshot_2025-05-21_at_11.41.52_ojlvbb.png",
     title: "Isolated – Short Film",
+    category: "SHORT FILM",
+    year: "2023",
+    description:
+      "A powerful narrative about connection and isolation in the modern world.",
   },
   {
     image:
       "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748338594/Screenshot_2025-05-21_at_11.33.04_skvfyq.png",
     title: "Personas – Music Video",
+    category: "MUSIC VIDEO",
+    year: "2024",
+    description:
+      "A visually striking music video exploring the different facets of human personality.",
   },
 ];
