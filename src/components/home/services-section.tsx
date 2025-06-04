@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Film, Theater, Calendar, Palette, ArrowRight } from "lucide-react";
+import { Film, Theater, Calendar, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,12 +16,8 @@ const services = [
       "From concept to final cut, we create compelling visual stories for screens of all sizes.",
     icon: Film,
     image:
-      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748337635/DSC_4645-2_v9s1fq.jpg",
-    features: [
-      "Pre-production",
-      "Cinematography",
-      "Post-production",
-    ],
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748338707/Screenshot_2025-05-21_at_11.28.37_nybt9k.png",
+    features: ["Pre-production", "Cinematography", "Post-production"],
     link: "/film",
   },
   {
@@ -45,27 +41,12 @@ const services = [
       "Creating immersive event experiences with cutting-edge production technology.",
     icon: Calendar,
     image:
-      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748241844/3cf8ff88-53d4-4737-ae7f-5410feef432b_qqlvj5.jpg",
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748337635/DSC_4645-2_v9s1fq.jpg",
     features: [
       "Event Planning",
       "Technical Production",
       "Live Streaming",
       "Coordination",
-    ],
-    link: "/events",
-  },
-  {
-    title: "SHADESOF",
-    description:
-      "Our exclusive creative methodology, thought-provoking installations and experiences.",
-    icon: Palette,
-    image:
-      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748338186/Bomb_Factory_ART-50_c1wysx.jpg",
-    features: [
-      "Creative Strategy",
-      "Installation Art",
-      "Interactive Design",
-      "Experience Design",
     ],
     link: "/events",
   },
@@ -103,7 +84,7 @@ export function ServicesSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.article
               key={index}

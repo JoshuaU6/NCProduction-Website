@@ -12,12 +12,12 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     id: 1,
-    title: "The Last Chapter",
+    title: "Benchwarmers",
     category: "FILM",
     description:
-      "A complex drama exploring themes of identity and belonging in contemporary society.",
+      "A social-realism piece exploring vignettes of memories around one bench. The bench becomes a focal point for intertwined experiences and social relationships.",
     image:
-      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748241994/DSC_3717_dewsgt.jpg",
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748353389/Benchwarmers_E2-40_nvyzxo.jpg",
     color: "from-red-500/20 to-red-900/40",
     darkColor: "from-red-900/80 to-black/80",
     rating: 4.8,
@@ -40,12 +40,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "Luminescence Gala",
+    title: "Community Film Collective",
     category: "EVENTS",
     description:
-      "A spectacular charity event featuring immersive lighting and multimedia installations.",
+      "Each month, we curate a themed selection of films submitted by local and emerging creatives",
     image:
-      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748242001/DSC_2479_1_tlpprv.jpg",
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748241994/DSC_3717_dewsgt.jpg",
     color: "from-purple-500/20 to-purple-900/40",
     darkColor: "from-purple-900/80 to-black/80",
     rating: 5.0,
