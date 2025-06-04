@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Badge } from "@/components/ui/badge"
-import { Palette, Users, Heart, Zap, Eye, Handshake } from "lucide-react"
+import { motion } from "framer-motion";
+import { Badge } from "@/components/ui/badge";
+import { Palette, Zap, Handshake } from "lucide-react";
 
 const values = [
   {
@@ -13,30 +13,7 @@ const values = [
     color: "from-purple-500/20 to-purple-900/40",
     darkColor: "from-purple-900/80 to-black/80",
   },
-  {
-    icon: Heart,
-    title: "Authentic Storytelling",
-    description:
-      "We believe in the power of authentic, meaningful narratives that connect with audiences on a deeper level and leave lasting impressions.",
-    color: "from-red-500/20 to-red-900/40",
-    darkColor: "from-red-900/80 to-black/80",
-  },
-  {
-    icon: Users,
-    title: "Collaborative Spirit",
-    description:
-      "We thrive on collaboration, bringing together diverse talents and perspectives to create something greater than the sum of its parts.",
-    color: "from-blue-500/20 to-blue-900/40",
-    darkColor: "from-blue-900/80 to-black/80",
-  },
-  {
-    icon: Eye,
-    title: "Social Impact",
-    description:
-      "Every project we undertake is designed to create positive social change and amplify voices that need to be heard.",
-    color: "from-green-500/20 to-green-900/40",
-    darkColor: "from-green-900/80 to-black/80",
-  },
+
   {
     icon: Zap,
     title: "Innovation",
@@ -53,11 +30,14 @@ const values = [
     color: "from-teal-500/20 to-teal-900/40",
     darkColor: "from-teal-900/80 to-black/80",
   },
-]
+];
 
 export function OurValues() {
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900" aria-labelledby="values-heading">
+    <section
+      className="py-20 bg-gray-50 dark:bg-gray-900"
+      aria-labelledby="values-heading"
+    >
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -66,10 +46,16 @@ export function OurValues() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <Badge variant="outline" className="border-red-500 text-red-500 mb-4 bg-red-50 dark:bg-red-900/20">
+          <Badge
+            variant="outline"
+            className="border-red-500 text-red-500 mb-4 bg-red-50 dark:bg-red-900/20"
+          >
             OUR VALUES
           </Badge>
-          <h2 id="values-heading" className="text-4xl md:text-5xl font-bold mb-4">
+          <h2
+            id="values-heading"
+            className="text-4xl md:text-5xl font-bold mb-4"
+          >
             WHAT DRIVES US
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -113,5 +99,5 @@ export function OurValues() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,18 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ArrowRight, Handshake, Users, Briefcase, Heart } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Handshake, Users, Briefcase, Heart } from "lucide-react";
+
 import { CONTACT_INFO } from "@/lib/constants";
 
 export function CommunitySection() {
-  const handleWorkWithUs = () => {
-    window.open(CONTACT_INFO.social.instagram, "_blank", "noopener,noreferrer");
-  };
-
   const handleJoinCommunity = () => {
-    window.open(CONTACT_INFO.social.instagram, "_blank", "noopener,noreferrer");
+    window.open(CONTACT_INFO.googleForm, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -81,14 +79,16 @@ export function CommunitySection() {
                 </div>
 
                 <Button
-                  onClick={handleWorkWithUs}
+                  asChild
                   className="w-full bg-red-600 hover:bg-red-700 text-white transition-all duration-300 group"
                 >
-                  GET IN TOUCH
-                  <ArrowRight
-                    className="ml-2 transition-transform group-hover:translate-x-1"
-                    size={16}
-                  />
+                  <a href={`mailto:${CONTACT_INFO.email.general}`}>
+                    GET IN TOUCH
+                    <ArrowRight
+                      className="ml-2 transition-transform group-hover:translate-x-1"
+                      size={16}
+                    />
+                  </a>
                 </Button>
               </CardContent>
             </Card>

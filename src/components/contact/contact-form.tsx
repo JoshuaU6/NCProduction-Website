@@ -293,20 +293,13 @@ export function ContactForm() {
           </div>
 
           {/* Form Statistics */}
-          <div className="mt-6 grid grid-cols-3 gap-4 text-center">
+          <div className="mt-6 grid gap-4 text-center">
             <div className="p-4 bg-white dark:bg-black rounded-lg shadow">
               <div className="text-2xl font-bold text-red-500">
                 {RESPONSE_TIMES.email}
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">
                 Response Time
-              </div>
-            </div>
-
-            <div className="p-4 bg-white dark:bg-black rounded-lg shadow">
-              <div className="text-2xl font-bold text-red-500">Free</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">
-                Consultation
               </div>
             </div>
           </div>

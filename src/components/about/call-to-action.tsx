@@ -18,7 +18,7 @@ export function CallToAction() {
           className="text-center max-w-4xl mx-auto"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to amplify
+            Ready to tell
             <br />
             <span className="text-red-500">your story?</span>
           </h2>
@@ -50,30 +50,29 @@ export function CallToAction() {
           </motion.div>
 
           <motion.div
-            className="mt-12 grid md:grid-cols-2 gap-8 text-center"
+            className="mt-12 flex justify-center items-center gap-8 text-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            {[
-              { label: "Response Time", value: "< 48 hours" },
-              { label: "Free Consultation", value: "Always" },
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                className="p-6 bg-white/80 dark:bg-black/80 backdrop-blur-sm rounded-2xl shadow-lg"
-                whileHover={{ y: -5 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
-                <div className="text-2xl font-bold text-red-500 mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-gray-600 dark:text-gray-400">
-                  {stat.label}
-                </div>
-              </motion.div>
-            ))}
+            {[{ label: "Response Time", value: "< 48 hours" }].map(
+              (stat, index) => (
+                <motion.div
+                  key={index}
+                  className="p-6 bg-white/80 dark:bg-black/80 backdrop-blur-sm rounded-2xl shadow-lg"
+                  whileHover={{ y: -5 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                  <div className="text-2xl font-bold text-red-500 mb-2">
+                    {stat.value}
+                  </div>
+                  <div className="text-gray-600 dark:text-gray-400">
+                    {stat.label}
+                  </div>
+                </motion.div>
+              )
+            )}
           </motion.div>
         </motion.div>
       </div>

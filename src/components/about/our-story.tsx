@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Badge } from "@/components/ui/badge";
-import { Quote, Award, Globe, Lightbulb } from "lucide-react";
 import Image from "next/image";
+
+import { Badge } from "@/components/ui/badge";
+import { Quote } from "lucide-react";
 
 export function OurStory() {
   return (
@@ -92,55 +93,6 @@ export function OurStory() {
             foster understanding, and inspire meaningful change in our
             communities and beyond.
           </p>
-        </motion.div>
-
-        {/* Impact Metrics */}
-        <motion.div
-          className="grid md:grid-cols-3 gap-8"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          {[
-            {
-              icon: Award,
-              title: "Artistic Excellence",
-              description:
-                "Creating award-winning content that pushes creative boundaries while maintaining authenticity",
-            },
-            {
-              icon: Globe,
-              title: "Global Impact",
-              description:
-                "Reaching diverse audiences worldwide with stories that resonate across cultural boundaries",
-            },
-            {
-              icon: Lightbulb,
-              title: "Innovation",
-              description:
-                "Pioneering new approaches to multimedia storytelling that amplify marginalized voices",
-            },
-          ].map((item, index) => (
-            <motion.div
-              key={index}
-              className="text-center p-8 bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -5 }}
-            >
-              <item.icon
-                className="w-12 h-12 text-red-500 mx-auto mb-4"
-                aria-hidden="true"
-              />
-              <h4 className="text-xl font-bold mb-3">{item.title}</h4>
-              <p className="text-gray-600 dark:text-gray-400">
-                {item.description}
-              </p>
-            </motion.div>
-          ))}
         </motion.div>
       </div>
     </section>

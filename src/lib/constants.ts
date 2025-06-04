@@ -4,6 +4,8 @@ export const CONTACT_INFO = {
     general: "contactncproductions@gmail.com",
     projects: "contactncproductions@gmail.com", // Can be updated to separate email if needed
   },
+  googleForm:
+    "https://docs.google.com/forms/d/e/1FAIpQLSe8m3lFY6uFVnin4mxVAjax6zHY-Mv2BIBjziIxoom2ra567w/viewform",
   phone: "", // Update with actual phone number
   address: {
     street: "1234 Creative Avenue",
