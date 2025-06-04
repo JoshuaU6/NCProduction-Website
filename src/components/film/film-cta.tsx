@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, MessageCircle, Calendar, Film } from "lucide-react";
+import { ArrowRight, Calendar, Film } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
@@ -50,18 +50,13 @@ export function FilmCTA() {
           </motion.div>
 
           <motion.div
-            className="grid md:grid-cols-2 gap-8 text-center"
+            className="flex justify-center items-center gap-8 text-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
             {[
-              {
-                icon: MessageCircle,
-                label: "Free Consultation",
-                value: "Always",
-              },
               { icon: Calendar, label: "Response Time", value: "< 48 hours" },
             ].map((stat, index) => (
               <motion.div

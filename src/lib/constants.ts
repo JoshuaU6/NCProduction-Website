@@ -57,3 +57,26 @@ export const testimonials = [
     rating: 5,
   },
 ];
+
+export const films = [
+  {
+    image:
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748353388/Benchwarmes_0427_1_uupvw0.jpg",
+    title: "Benchwarmers – Short Film",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748338554/Screenshot_2025-05-21_at_11.46.41_g5qacr.png",
+    title: "Who Are We – Short Doc",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748338740/Screenshot_2025-05-21_at_11.41.52_ojlvbb.png",
+    title: "Isolated – Short Film",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dmm9rjqf9/image/upload/v1748338594/Screenshot_2025-05-21_at_11.33.04_skvfyq.png",
+    title: "Personas – Music Video",
+  },
+];
