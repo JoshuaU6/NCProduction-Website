@@ -1,8 +1,8 @@
 // Contact Information Constants
 export const CONTACT_INFO = {
   email: {
-    general: "info@ncproductions.com",
-    projects: "info@ncproductions.com", // Can be updated to separate email if needed
+    general: "info@ncproductions.net",
+    projects: "info@ncproductions.net", // Can be updated to separate email if needed
   },
   googleForm:
     "https://docs.google.com/forms/d/e/1FAIpQLSe8m3lFY6uFVnin4mxVAjax6zHY-Mv2BIBjziIxoom2ra567w/viewform",
